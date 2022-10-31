@@ -26,7 +26,30 @@ int main(){
 			++words;
 	}
   
+for (int i = 0; i < a; ++i)	//counter for first dimension
+	{
+		for (int j = 0; j < b; ++j)	//counter for second dimension
+		{
+			for (int k = 0; k < c; ++k)	//counter for third dimension
+			{
+				cout << "\nEnter value at position[" << i << "]" << "[" << j << "]" << "[" << k << "]";
 
+				cin >> arr[i][j][k];	//taking input in the set counter
+			}
+		}
+	}
+
+	for (int i = 0; i < a; ++i)	//printing the array values as set
+	{
+		for (int j = 0; j < b; ++j)
+		{
+			for (int k = 0; k < c; ++k)
+			{
+				cout << "\nValue at position[" << i << "]" << "[" << j << "]" << "[" << k << "]= " << arr[i][j][k];
+			}
+		}
+	}
+	return 0;
 	cout << "Number of words=" << words << "\n";
 	cout << "Number of alphabets=" << alph << "\n";
 	cout << "Number of vowels=" << vow << "\n";
